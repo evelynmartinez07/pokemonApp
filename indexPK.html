@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>⚡Pokémon Explorer</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar Pokémon..." />
+      <button id="searchBtn">Buscar</button>
+    </div>
+    <div id="status"></div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <div>
+        <h2>❤️Favoritos <span class="badge" id="favoritesCount">0</span></h2>
+        <ul id="favorites"></ul>
+      </div>
+      <div>
+        <h2>🕛Vistos recientemente <span class="badge" id="recentCount">0</span></h2>
+        <ul id="recentSearches"></ul>
+      </div>
+    </aside>
+
+    <div class="content-right">
+      <section id="pokemonDetail" class="detail-section"></section>
+      <section id="pokemonList" class="list-section"></section>
+      <nav id="pagination" class="pagination"></nav>
+    </div>
+  </main>
+
+  <footer>
+    <p>Hecho por Evelyn Martinez </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
